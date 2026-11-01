@@ -2,6 +2,8 @@
 
 Who can read a document is a **pure function**. It takes the collection status, the document status, the visibility, and the caller. It does not load the database and it does not know about HTTP.
 
+The split between loading rows and deciding access is in [docs/architecture.md](docs/architecture.md).
+
 The API asks that function and then responds:
 
 - Allowed: `200` and the title.
